@@ -1,0 +1,24 @@
+body,div,dt,dl,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p{
+    margin:0;
+    padding:0;
+}/*（将样式内外边距改为0）*/
+
+ ol,ul,li{
+     list-style:none;/*（清除自带样式）*/
+ }
+
+a{
+    text-decoration:none;/*(属性规定添加到文本的修饰。注释：修饰的颜色由 "color" 属性设置。)*/
+    display:block;/*（显示为块级元素，前后带有换行符）*/
+    color: #fff;
+}
+.clearfloat{
+    zoom: 1;
+}
+.clearfloat:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
